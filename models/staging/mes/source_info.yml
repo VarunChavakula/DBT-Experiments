@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: line_oee
+    description: Raw line data.
     database: adp
     schema: g3redshift
     tables: 
