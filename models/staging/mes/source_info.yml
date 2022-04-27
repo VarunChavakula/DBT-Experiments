@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: line_oee
+    database: adp
+    schema: g3redshift
+    tables: 
+        - name: g3_line_production_summary
+          loaded_at_field: shift_start_date_time
+          freshness:
+            warn_after: {count: 12, period: hour}
+            error_after: {count: 24, period: hour}
+        

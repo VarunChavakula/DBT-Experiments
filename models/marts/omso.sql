@@ -1,0 +1,1 @@
+select * from {{ ref('lps') }} where equipment_name like '%OMSO%'

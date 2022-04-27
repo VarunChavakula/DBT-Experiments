@@ -1,0 +1,1 @@
+SELECT * FROM "adp"."g3redshift"."g3_line_production_summary" 
