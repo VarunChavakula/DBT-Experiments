@@ -1,1 +1,1 @@
-SELECT * FROM "adp"."g3redshift"."g3_line_production_summary" 
+SELECT * FROM {{source('line_oee','g3_line_production_summary')}}

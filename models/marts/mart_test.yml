@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: press
+    columns: 
+      - name: operation_uuid
+        tests:
+          - not_null
+
+      - name: shiftname
+        tests:
+          - accepted_values:
+              values:
+                - N1
+                - N2
+                - D1
+                - D2
